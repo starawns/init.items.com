@@ -21,4 +21,6 @@ Route::get('/', function () {
 //     return view('front/sports/index');
 // });
 
+Route::any('/index/home', [App\Http\Controllers\IndexController::class, 'home']);
+
 Route::any('/sports/index', [App\Http\Controllers\SportsController::class, 'index']);
